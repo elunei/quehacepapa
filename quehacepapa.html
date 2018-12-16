@@ -12,22 +12,55 @@
   </head>
 
 
+<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+                                      <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">.1111..</div>
+                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">.222..</div>
+                                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..3333.</div>
+                                      </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ -->
+
   <body>
 <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-light">
   <a class="navbar-brand" href="#">Qué hacé papá project</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+<!-- 
+<li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li> -->
+
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Saludos<span class="sr-only">(current)</span></a>
+
+    <ul class="nav navbar-nav mr-auto" role="tablist" id="myTab">
+
+      <li class="nav-item" data-toggle="tab" role="tab">
+        <a class="nav-link" href="#paginaSaludos">Saludos<span class="sr-only">(current)</span></a>
       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="#">Enviar mis saludos<span class="sr-only">(current)</span></a>
+
+       <li class="nav-item"  data-togle="tab" role="tab">
+        <a class="nav-link active" href="paginaContacto">Enviar mis saludos<span class="sr-only">(current)</span></a>
       </li>
-       <li class="nav-item active">
+
+
+       <li class="nav-item">
         <a class="nav-link" href="#">Quienes somos<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -55,93 +88,77 @@
   </div>
 </nav>
 
-<div id="container" style="margin-top:70px">
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat porttitor velit, quis fermentum mi volutpat eget. Nunc iaculis varius pharetra. Cras ac ornare nibh, eget varius eros. Integer purus urna, elementum ac nunc ut, rutrum condimentum est. Donec eget aliquam dolor. Mauris bibendum, velit mattis tincidunt consequat, sapien mi tristique lectus, nec finibus nibh orci ac diam. Aenean eleifend convallis magna, et sodales nulla egestas non. Phasellus sit amet tortor mi. Ut tempus diam ac sagittis pulvinar. Nulla ac augue finibus, volutpat ligula sed, varius lorem. Nulla lorem dui, pulvinar mattis augue id, varius rutrum diam. Nam sed eros ante. Vivamus ultricies vestibulum est vel eleifend. Duis leo justo, sodales eu sodales ac, efficitur vel sem. Duis fermentum, eros vel tincidunt dapibus, justo erat molestie libero, sit amet scelerisque justo diam nec nibh. Donec at nulla lectus.
+<div class="tab-content" id="myTabContent">
 
-Donec nisl tellus, sodales quis turpis sit amet, facilisis mollis leo. Suspendisse potenti. Donec facilisis lorem ligula, ut viverra eros suscipit in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue at risus vitae vulputate. Ut turpis dui, vulputate tristique dui sit amet, vestibulum rhoncus risus. Vivamus et convallis dui. Quisque a ligula feugiat quam rhoncus suscipit quis sit amet turpis. Ut congue orci ac ipsum imperdiet ornare.
+   <div class="tab-pane active" id="paginaSaludos" role="tabpanel">
+     <div id="container" style="margin-top:70px">
+              
+              
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat porttitor velit, quis fermentum mi volutpat eget. Nunc iaculis varius pharetra. Cras ac ornare nibh, eget varius eros. Integer purus urna, elementum ac nunc ut, rutrum condimentum est. Donec eget aliquam dolor. Mauris bibendum, velit mattis tincidunt consequat, sapien mi tristique lectus, nec finibus nibh orci ac diam. Aenean eleifend convallis magna, et sodales nulla egestas non. Phasellus sit amet tortor mi. Ut tempus diam ac sagittis pulvinar. Nulla ac augue finibus, volutpat ligula sed, varius lorem. Nulla lorem dui, pulvinar mattis augue id, varius rutrum diam. Nam sed eros ante. Vivamus ultricies vestibulum est vel eleifend. Duis leo justo, sodales eu sodales ac, efficitur vel sem. Duis fermentum, eros vel tincidunt dapibus, justo erat molestie libero, sit amet scelerisque justo diam nec nibh. Donec at nulla lectus.
 
-In turpis mi, sodales vitae dolor vel, malesuada laoreet lorem. Suspendisse sit amet metus rutrum, condimentum odio at, tempor lacus. Praesent enim velit, cursus in tempor sit amet, molestie in lorem. Fusce sem tortor, euismod tincidunt lacus quis, cursus porttitor urna. Integer enim tellus, facilisis non augue non, facilisis feugiat eros. Donec eu justo tincidunt, dapibus urna eget, interdum tellus. Morbi condimentum ante et eros mollis, nec luctus leo tempor. Sed sed lobortis nisi. Sed tristique libero eu urna convallis aliquam. Pellentesque non bibendum neque, vitae sollicitudin mi. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer erat odio, pharetra nec semper nec, feugiat id nisl.
+        </div>
+    </div>
 
-Aliquam eget est tempus, posuere dolor et, eleifend leo. Suspendisse laoreet urna eu fringilla gravida. Vestibulum euismod eu diam sit amet lobortis. Morbi convallis mauris lectus, at viverra dolor vulputate et. Aenean at orci fringilla, tincidunt nibh at, ornare urna. Curabitur hendrerit ante vitae metus porttitor rutrum. Vivamus ut rhoncus mauris, sit amet fermentum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor tortor eget fermentum suscipit.
 
-Integer posuere, odio vitae viverra fermentum, dolor purus dignissim neque, sit amet suscipit est lorem sit amet purus. Nullam tempor convallis leo id pretium. Quisque molestie velit pulvinar augue tincidunt laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna ex, aliquam nec finibus vel, consectetur sit amet neque. Phasellus vitae quam gravida, tempus lectus ac, mollis mauris. Aenean commodo ante ut lorem eleifend, sed convallis nisl condimentum. Phasellus sodales velit elit, sit amet mollis mauris ultrices sit amet. Proin non enim feugiat, placerat orci id, sagittis nisl. Curabitur maximus mollis lorem, eget aliquet turpis feugiat non.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat porttitor velit, quis fermentum mi volutpat eget. Nunc iaculis varius pharetra. Cras ac ornare nibh, eget varius eros. Integer purus urna, elementum ac nunc ut, rutrum condimentum est. Donec eget aliquam dolor. Mauris bibendum, velit mattis tincidunt consequat, sapien mi tristique lectus, nec finibus nibh orci ac diam. Aenean eleifend convallis magna, et sodales nulla egestas non. Phasellus sit amet tortor mi. Ut tempus diam ac sagittis pulvinar. Nulla ac augue finibus, volutpat ligula sed, varius lorem. Nulla lorem dui, pulvinar mattis augue id, varius rutrum diam. Nam sed eros ante. Vivamus ultricies vestibulum est vel eleifend. Duis leo justo, sodales eu sodales ac, efficitur vel sem. Duis fermentum, eros vel tincidunt dapibus, justo erat molestie libero, sit amet scelerisque justo diam nec nibh. Donec at nulla lectus.
+    <div class="tab-pane" id="paginaContacto" role="tabpanel">
+       <div class="container">
+              <form>
+                <div class="form-group row">
+                  <div class="col-sm-2">
+                      <label for="exampleFormControlInput1">Email:</label>
+                    </div>
+                   
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                    </div>
+                   
+                    <div class="col-sm-12">
+                      <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email.</small>
+                    </div>
+                  </div>
 
-Donec nisl tellus, sodales quis turpis sit amet, facilisis mollis leo. Suspendisse potenti. Donec facilisis lorem ligula, ut viverra eros suscipit in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue at risus vitae vulputate. Ut turpis dui, vulputate tristique dui sit amet, vestibulum rhoncus risus. Vivamus et convallis dui. Quisque a ligula feugiat quam rhoncus suscipit quis sit amet turpis. Ut congue orci ac ipsum imperdiet ornare.
+                  <div class="form-group row col-form-label">
 
-In turpis mi, sodales vitae dolor vel, malesuada laoreet lorem. Suspendisse sit amet metus rutrum, condimentum odio at, tempor lacus. Praesent enim velit, cursus in tempor sit amet, molestie in lorem. Fusce sem tortor, euismod tincidunt lacus quis, cursus porttitor urna. Integer enim tellus, facilisis non augue non, facilisis feugiat eros. Donec eu justo tincidunt, dapibus urna eget, interdum tellus. Morbi condimentum ante et eros mollis, nec luctus leo tempor. Sed sed lobortis nisi. Sed tristique libero eu urna convallis aliquam. Pellentesque non bibendum neque, vitae sollicitudin mi. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer erat odio, pharetra nec semper nec, feugiat id nisl.
+                  <div class="col-sm-2">
+                    <label for="exampleFormControlTextarea1">Nombre:</label>
+                  </div>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Roberte">
+                  </div>
+                </div>
 
-Aliquam eget est tempus, posuere dolor et, eleifend leo. Suspendisse laoreet urna eu fringilla gravida. Vestibulum euismod eu diam sit amet lobortis. Morbi convallis mauris lectus, at viverra dolor vulputate et. Aenean at orci fringilla, tincidunt nibh at, ornare urna. Curabitur hendrerit ante vitae metus porttitor rutrum. Vivamus ut rhoncus mauris, sit amet fermentum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor tortor eget fermentum suscipit.
 
-Integer posuere, odio vitae viverra fermentum, dolor purus dignissim neque, sit amet suscipit est lorem sit amet purus. Nullam tempor convallis leo id pretium. Quisque molestie velit pulvinar augue tincidunt laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna ex, aliquam nec finibus vel, consectetur sit amet neque. Phasellus vitae quam gravida, tempus lectus ac, mollis mauris. Aenean commodo ante ut lorem eleifend, sed convallis nisl condimentum. Phasellus sodales velit elit, sit amet mollis mauris ultrices sit amet. Proin non enim feugiat, placerat orci id, sagittis nisl. Curabitur maximus mollis lorem, eget aliquet turpis feugiat non.
+                <div class="form-group row col-form-label">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat porttitor velit, quis fermentum mi volutpat eget. Nunc iaculis varius pharetra. Cras ac ornare nibh, eget varius eros. Integer purus urna, elementum ac nunc ut, rutrum condimentum est. Donec eget aliquam dolor. Mauris bibendum, velit mattis tincidunt consequat, sapien mi tristique lectus, nec finibus nibh orci ac diam. Aenean eleifend convallis magna, et sodales nulla egestas non. Phasellus sit amet tortor mi. Ut tempus diam ac sagittis pulvinar. Nulla ac augue finibus, volutpat ligula sed, varius lorem. Nulla lorem dui, pulvinar mattis augue id, varius rutrum diam. Nam sed eros ante. Vivamus ultricies vestibulum est vel eleifend. Duis leo justo, sodales eu sodales ac, efficitur vel sem. Duis fermentum, eros vel tincidunt dapibus, justo erat molestie libero, sit amet scelerisque justo diam nec nibh. Donec at nulla lectus.
+                  <div class="col-sm-2">
+                    <label for="exampleFormControlTextarea1">Saludo:</label>
+                  </div>
 
-Donec nisl tellus, sodales quis turpis sit amet, facilisis mollis leo. Suspendisse potenti. Donec facilisis lorem ligula, ut viverra eros suscipit in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue at risus vitae vulputate. Ut turpis dui, vulputate tristique dui sit amet, vestibulum rhoncus risus. Vivamus et convallis dui. Quisque a ligula feugiat quam rhoncus suscipit quis sit amet turpis. Ut congue orci ac ipsum imperdiet ornare.
+                  <div class="col-sm-10">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="qué hacé turbina!" style="resize:none;"></textarea>
+                  </div>
+                </div>
 
-In turpis mi, sodales vitae dolor vel, malesuada laoreet lorem. Suspendisse sit amet metus rutrum, condimentum odio at, tempor lacus. Praesent enim velit, cursus in tempor sit amet, molestie in lorem. Fusce sem tortor, euismod tincidunt lacus quis, cursus porttitor urna. Integer enim tellus, facilisis non augue non, facilisis feugiat eros. Donec eu justo tincidunt, dapibus urna eget, interdum tellus. Morbi condimentum ante et eros mollis, nec luctus leo tempor. Sed sed lobortis nisi. Sed tristique libero eu urna convallis aliquam. Pellentesque non bibendum neque, vitae sollicitudin mi. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer erat odio, pharetra nec semper nec, feugiat id nisl.
+                <div class="form-group row col-form-label">
 
-Aliquam eget est tempus, posuere dolor et, eleifend leo. Suspendisse laoreet urna eu fringilla gravida. Vestibulum euismod eu diam sit amet lobortis. Morbi convallis mauris lectus, at viverra dolor vulputate et. Aenean at orci fringilla, tincidunt nibh at, ornare urna. Curabitur hendrerit ante vitae metus porttitor rutrum. Vivamus ut rhoncus mauris, sit amet fermentum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor tortor eget fermentum suscipit.
+                  <div class="col-sm-2">
+                   <label for="exampleFormControlTextarea1">Aclaraciones:</label>
+                  </div>
+                  
+                  <div class="col-sm-10">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Contexto en que se usa, forma de contestarlo, o cualquier otra aclaración." style="resize:none;"></textarea>
+                  </div>
+                </div>
 
-Integer posuere, odio vitae viverra fermentum, dolor purus dignissim neque, sit amet suscipit est lorem sit amet purus. Nullam tempor convallis leo id pretium. Quisque molestie velit pulvinar augue tincidunt laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna ex, aliquam nec finibus vel, consectetur sit amet neque. Phasellus vitae quam gravida, tempus lectus ac, mollis mauris. Aenean commodo ante ut lorem eleifend, sed convallis nisl condimentum. Phasellus sodales velit elit, sit amet mollis mauris ultrices sit amet. Proin non enim feugiat, placerat orci id, sagittis nisl. Curabitur maximus mollis lorem, eget aliquet turpis feugiat non.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat porttitor velit, quis fermentum mi volutpat eget. Nunc iaculis varius pharetra. Cras ac ornare nibh, eget varius eros. Integer purus urna, elementum ac nunc ut, rutrum condimentum est. Donec eget aliquam dolor. Mauris bibendum, velit mattis tincidunt consequat, sapien mi tristique lectus, nec finibus nibh orci ac diam. Aenean eleifend convallis magna, et sodales nulla egestas non. Phasellus sit amet tortor mi. Ut tempus diam ac sagittis pulvinar. Nulla ac augue finibus, volutpat ligula sed, varius lorem. Nulla lorem dui, pulvinar mattis augue id, varius rutrum diam. Nam sed eros ante. Vivamus ultricies vestibulum est vel eleifend. Duis leo justo, sodales eu sodales ac, efficitur vel sem. Duis fermentum, eros vel tincidunt dapibus, justo erat molestie libero, sit amet scelerisque justo diam nec nibh. Donec at nulla lectus.
+                <button type="submit" class="btn btn-primary">Enviar mi saludo!</button>
+                
 
-Donec nisl tellus, sodales quis turpis sit amet, facilisis mollis leo. Suspendisse potenti. Donec facilisis lorem ligula, ut viverra eros suscipit in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue at risus vitae vulputate. Ut turpis dui, vulputate tristique dui sit amet, vestibulum rhoncus risus. Vivamus et convallis dui. Quisque a ligula feugiat quam rhoncus suscipit quis sit amet turpis. Ut congue orci ac ipsum imperdiet ornare.
-
-In turpis mi, sodales vitae dolor vel, malesuada laoreet lorem. Suspendisse sit amet metus rutrum, condimentum odio at, tempor lacus. Praesent enim velit, cursus in tempor sit amet, molestie in lorem. Fusce sem tortor, euismod tincidunt lacus quis, cursus porttitor urna. Integer enim tellus, facilisis non augue non, facilisis feugiat eros. Donec eu justo tincidunt, dapibus urna eget, interdum tellus. Morbi condimentum ante et eros mollis, nec luctus leo tempor. Sed sed lobortis nisi. Sed tristique libero eu urna convallis aliquam. Pellentesque non bibendum neque, vitae sollicitudin mi. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer erat odio, pharetra nec semper nec, feugiat id nisl.
-
-Aliquam eget est tempus, posuere dolor et, eleifend leo. Suspendisse laoreet urna eu fringilla gravida. Vestibulum euismod eu diam sit amet lobortis. Morbi convallis mauris lectus, at viverra dolor vulputate et. Aenean at orci fringilla, tincidunt nibh at, ornare urna. Curabitur hendrerit ante vitae metus porttitor rutrum. Vivamus ut rhoncus mauris, sit amet fermentum purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor tortor eget fermentum suscipit.
-
-Integer posuere, odio vitae viverra fermentum, dolor purus dignissim neque, sit amet suscipit est lorem sit amet purus. Nullam tempor convallis leo id pretium. Quisque molestie velit pulvinar augue tincidunt laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna ex, aliquam nec finibus vel, consectetur sit amet neque. Phasellus vitae quam gravida, tempus lectus ac, mollis mauris. Aenean commodo ante ut lorem eleifend, sed convallis nisl condimentum. Phasellus sodales velit elit, sit amet mollis mauris ultrices sit amet. Proin non enim feugiat, placerat orci id, sagittis nisl. Curabitur maximus mollis lorem, eget aliquet turpis feugiat non.
+              </form>
+          </div>
 </div>
-
-  
-
-
-  
-<div class="container">
-  <form>
-  
-      <div class="form-group">
-    <label for="exampleFormControlInput1">Email:</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email.</small>
-
-  </div>
-
-    <div class="form-group">
-    <label for="exampleFormControlTextarea1">Nombre:</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Roberte"></textarea>
-  </div>
-
-
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Saludo:</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="qué hacé turbina!"></textarea>
-  </div>
-
-
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Aclaraciones:</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Contexto en que se usa, forma de contestarlo o cualquier otra aclaración."></textarea>
-  </div>
-
-
-  <button type="submit" class="btn btn-primary">Enviar mi saludo!</button>
-  
-
-</form>
-
 </div>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
   </body>
 </html>
